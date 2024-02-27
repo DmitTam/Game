@@ -1,16 +1,17 @@
 import javax.swing.text.Position;
 
-public abstract class Magician extends Warrior{String magic;
+public abstract class Magician extends Warrior{int magic; int heeling;
 
-    public abstract Magician(int health, String weapon, int powerHit, int speed, int armor, String magic, int atackRange, int hidding, String name, int x; int y){
-        this.health = health;
+    public abstract Magician(String name, int powerHit, int speed, int armor, String magic, int atackRange, int hidding, String name, int x; int y){
+        this.health = 80;
         this.weapon = weapon;
         this.powerHit = powerHit;
-        this.speed = speed;
-        this.armor = armor;
+        this.speed = 2;
+        this.armor = 2;
         this.magic = magic;
-        this.atackRange = atackRange;
-        this.hidding = hidding;
+        this.atackRange = 2;
+        this.hidding = 2;
+        this.heeling = heeling;
         this.name = name;
         this.position = new Position(position.x, y);
 }

@@ -10,11 +10,11 @@ public class Position {
         this.y = y;
     }
 
-    public double getX() {
+    public int getX() {
         return x;
     }
 
-    public double getY() {
+    public int getY() {
         return y;
     }
 
@@ -26,8 +26,8 @@ public class Position {
     }
 
 
-    public Double getDistance (Unit target){
-        double targetDistance = 0;
+    public Integer getDistance (Unit target){
+        int targetDistance = 0;
         targetDistance = Math.sqrt((Math.pow(target.position.getX() - this.getY(), 2))+ Math.sqrt((Math.pow(target.position.getY() - this.getY(), 2)));
         return targetDistance;
     }

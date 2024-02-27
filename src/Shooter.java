@@ -8,7 +8,7 @@ abstract public class Shooter extends Warrior{int health, String weapon, int arr
     this.speed = 3;
     this.armor = 1;
     this.atackRange = 3;
-    this.hidding = 3;
+    this.hidding = hidding;
     this.name = name;
     this.position = new Position(position.x, y);
 
