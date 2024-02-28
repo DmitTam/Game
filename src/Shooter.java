@@ -17,3 +17,7 @@ abstract public class Shooter extends Warrior{int health, String weapon, int arr
 
 
 }
+
+    public Shooter(java.lang.String weapon, int powerHit, int speed, int armor, int atackRange, int hidding, java.lang.String name, int x) {
+        super(weapon, powerHit, speed, armor, atackRange, hidding, name, x);
+    }

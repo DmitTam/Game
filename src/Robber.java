@@ -1,6 +1,10 @@
-public class Robber extends Warrior{int insolence,
+import javax.swing.text.Position;
+import java.util.Random;
 
-    public Robber(String name, int x, int y){
+public class Robber extends Warrior {
+    int insolence,
+
+    public Robber(String name, int x, int y) {
         this.weapon = "Кинжал";
         this.powerHit = 10;
         this.insolence = 12;
@@ -10,5 +14,9 @@ public class Robber extends Warrior{int insolence,
         this.hidding = 1;
         this.name = name;
         this.position = new Position(position.x, y);
+    }
 
+    private static String getName() {
+        return String.valueOf(Names.values()[new Random().nextInt(Names.values().length - 1)]);
+    }
 }

@@ -1,22 +1,22 @@
-public class Warrior extends Unit{
+import javax.swing.text.Position;
+
+public abstract class Warrior extends Unit{
     int health;
     String weapon;
     int powerHit;
     int speed;
     int armor;
-    String magic;
     int atackRange;
     int hidding;
     String name;
     protected Position position;
 
-    public Warrior(String weapon, int powerHit, int speed, int armor, String magic, int atackRange, int hidding, String name, int x; int y){
+    public abstract Warrior(String weapon, int powerHit, int speed, int armor, int atackRange, int hidding, String name, int x; int y){
         this.health = health;
         this.weapon = weapon;
         this.powerHit = powerHit;
         this.speed = speed;
         this.armor = armor;
-        this.magic = magic;
         this.atackRange = atackRange;
         this.hidding = hidding;
         this.name = name;
@@ -38,24 +38,6 @@ public class Warrior extends Unit{
             if (position.equals(position)) {
                 this.position = currentPos;
             }
-        }):
-    }
-}
-
-
-
-
-
-public Double getDistance (Unit target){
-    double targetDistance = 0;
-        targetDistance = Math.sqrt((Math.pow(target.position.getX() - this.getY(), 2))+ Math.sqrt((Math.pow(target.position.getY() - this.getY(), 2)))
-return targetDistance;
-}
-
-public Position getDiff (Position targetPos){
-    return new Position(targetPos.getX(), targetPos.getY());}
-}
-
-public boolean equals (Position target){
-    return x == target.getX() && y == target.getY();
+        }
+;    }
 }

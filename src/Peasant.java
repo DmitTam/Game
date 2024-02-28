@@ -1,4 +1,5 @@
 import javax.swing.text.Position;
+import java.util.Random;
 
 public class Peasant extends Unit{String name;
 
@@ -12,6 +13,9 @@ public class Peasant extends Unit{String name;
         this.hidding = 0;
         this.name = name;
         this.position = new Position(position.x, y);
+    }
+    private static String getName(){
+        return String.valueOf(Names.values()[new Random().nextInt(Names.values().length-1)]);
+    }
 
-}
 }

@@ -29,6 +29,10 @@ abstract public class Unit{
         return speed;
     }
 
+        public boolean needHeal(Unit){
+            if (this.health < 20) return true;
+    }
+
         for (Names names: names.getName()){
 
         }

@@ -5,8 +5,7 @@ import java.util.Random;
 
 
 
-
-public class Main {
+public class Main{
     public static ArrayList<Unit> myTeam = new ArrayList<>();
     public static ArrayList<Unit> targetTeam = new ArrayList<>();
     public static ArrayList<Unit> all = new ArrayList<>();

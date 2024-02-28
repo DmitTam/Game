@@ -1,3 +1,6 @@
+import javax.swing.text.Position;
+import java.util.Random;
+
 public class Monk extends Magician{
 
     public Monk(String name, int x, int y){
@@ -11,5 +14,9 @@ public class Monk extends Magician{
         this.heeling = 20;
         this.name = name;
         this.position = new Position(position.x, y);
+    }
+
+    private static String getName(){
+        return String.valueOf(Names.values()[new Random().nextInt(Names.values().length-1)]);
     }
 }
