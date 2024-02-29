@@ -1,10 +1,11 @@
 import javax.swing.text.Position;
 
-public class Sniper extends Shooter{ ;
+public class Sniper extends Shooter {
+    ;
     int bullets;
 
     public Sniper(String name, int x, int y) {
-        this.weapon = "Винтовка;
+        this.weapon = "Винтовка";
         this.powerHit = 4;
         this.speed = 3;
         this.armor = 1;
@@ -13,4 +14,5 @@ public class Sniper extends Shooter{ ;
         this.bullets = 10;
         this.name = name;
         this.position = new Position(position.x, y);
+    }
 }

@@ -14,7 +14,7 @@ abstract public class Unit{
     protected Position position;
     static int count = 0;
 
-    public abstract Unit(int id; int health; int speed; int armor; int hidding; String name; String weapon; protected Position position;)
+    public abstract Unit(int id; int health; int speed; int armor; int hidding; String name; String weapon; Position position;)
     {
         this.id = count++;
         this.health = 40;
@@ -22,15 +22,15 @@ abstract public class Unit{
         this.armor = 0;
         this.hidding = 0;
         this.name = new Names();
-        this weapon = new Weapons();
+        this.weapon = new Weapons();
         this.position = new Position(x, y);
 
-        public static int getSpeed(Unit){
+        public static int getSpeed(){
         return speed;
     }
 
-        public boolean needHeal(Unit){
-            if (this.health < 20) return true;
+        public boolean needHeal(){
+            if (this.health < 20) return true;}
     }
 
         for (Names names: names.getName()){
@@ -87,8 +87,8 @@ abstract public class Unit{
     }
 
         public void getDamage(Unit unit1, Unit unit2){
-    снятие защиты? снятие здоровья
-                проверка
+//    снятие защиты? снятие здоровья
+//                проверка
     }
 
 

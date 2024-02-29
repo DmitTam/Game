@@ -54,13 +54,39 @@ public class Main{
 
                 }
             }
+            for (int i = 1; i < teamcount+1; i++) {
+                int val = random.nextInt(7);
+                int coordX1 = random.nextInt(10);
+                int coordX2 = random.nextInt(10);
+                Position xy1 = new Position(coordX1, 1);
+                Position xy2 = new Position(coordX2, 10);
+                System.out.println(xy1);
+                switch (val) {
+                    case 0:
+
+                        targetTeam.add(new Sniper(getName(), i,10));
+                        break;
+                    case 1:
+
+                        targetTeam.add(new Wizard(getName(), i,10));
+                        break;
+                    case 2:
+
+                        targetTeam.add(new Monk(getName(), i,10));
+                        break;
+                    case 3:
+
+                        targetTeam.add(new Robber(getName(), i,10));
+                        break;
+                    case 4:
+
+                        targetTeam.add(new Peasant(getName(), i,10));
+                        break;
+                    case 5:
+
+                        targetTeam.add(new Achery(getName(), i,10));
+                        break;
+                }
+            }
+        }
     }
-
-
-
-
-
-
-
-
-}
