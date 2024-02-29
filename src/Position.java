@@ -18,7 +18,10 @@ public class Position {
         return y;
     }
 
-        public List<Integer> getPosition(){
+    public void setX(int x) {this.x = x;}
+    public void setY(int y) {this.y = y;}
+
+    public List<Integer> getPosition(){
         List<Integer> list = new ArrayList<>();
         list.add(x);
         list.add(y);
@@ -36,7 +39,6 @@ public class Position {
         return new Position(targetPos.getX(), targetPos.getY());}
 }
 
-    public boolean equals (Position target){
-        return x == target.getX() && y == target.getY();
-}
+    public boolean equals (Position target){ return x == target.getX() && y == target.getY();
+    }
 }

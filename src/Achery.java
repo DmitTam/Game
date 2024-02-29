@@ -20,8 +20,20 @@ public class Achery extends Shooter{int arrows;
             return String.valueOf(Names.values()[new Random().nextInt(Names.values().length-1)]);
         }
 
+        public String getInfo(){
+            return "Лучник";
+        };
+
+
         public boolean needArrows(){
             if this.arrows < 2 { return true;
         }
+
+        @Override
+        public void step(ArrayList<Unit> targetTeam, ArrayList<Unit> myTeam) {
+             if ((health<=0) || (arrows == 0)) return;
+             Unit target = super.findNearestEnemy(targetTeam);
+             target.getDamage(this.powerHit);
+             arrows--;
         }
 

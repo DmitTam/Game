@@ -3,8 +3,8 @@ import java.util.Random;
 
 public class Robber extends Warrior {
     int insolence,
-
     public Robber(String name, int x, int y) {
+        super(name, x, y);
         this.weapon = "Кинжал";
         this.powerHit = 10;
         this.insolence = 12;

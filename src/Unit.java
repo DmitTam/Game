@@ -47,10 +47,10 @@ abstract public class Unit{
     }
 
 
-        public boolean heroIsAlive(Unit target) {
-        if (target.getHealth() > 0) {
+        public boolean heroIsAlive(Unit unit) {
+        if (unit.getHealth() > 0) {
             return true;
-        } else System.out.printf("Покойся с миром, ",target.getName());
+        } else System.out.printf("Покойся с миром, ",unit.getName());
         return false;
     }
 
