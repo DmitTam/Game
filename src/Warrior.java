@@ -1,6 +1,4 @@
-import javax.swing.text.Position;
 
-import static jdk.internal.org.jline.reader.impl.LineReaderImpl.CompletionType.List;
 
 public abstract class Warrior extends Unit{
     int health;

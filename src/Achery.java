@@ -1,10 +1,8 @@
-import javax.swing.text.Position;
 import java.util.Random;
 
 public class Achery extends Shooter{int arrows;
 
     public Achery(String name, int x, int y) {
-        super();
         this.weapon = "Лук";
         this.powerHit = 4;
         this.speed = 3;

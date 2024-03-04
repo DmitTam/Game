@@ -1,4 +1,4 @@
-import javax.swing.text.Position;
+
 
 public class Sniper extends Shooter {
     ;

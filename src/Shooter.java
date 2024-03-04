@@ -1,4 +1,4 @@
-import javax.swing.text.Position;
+
 
 abstract public class Shooter extends Warrior{int health, String weapon, int arrowsNumber, int powerHit, int speed, int armor, String magic, int atackRange, int hidding, String name, int x; int y){
     this.health = 60;

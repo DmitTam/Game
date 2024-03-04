@@ -1,4 +1,3 @@
-import javax.swing.text.Position;
 import java.util.Random;
 
 public class Peasant extends Unit{String name;

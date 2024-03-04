@@ -1,4 +1,4 @@
-import javax.swing.text.Position;
+
 
 public abstract class Magician extends Warrior{int magic; int heeling;
 
